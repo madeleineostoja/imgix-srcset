@@ -1,0 +1,44 @@
+{
+  "name": "imgix-srcset",
+  "description": "A dead simple utility to generate responsive srcsets from an Imgix compatible source URL",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Madeleine Ostoja",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/imgix-srcset.umd.js",
+  "module": "./dist/imgix-srcset.es.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "develop": "rollup -cw",
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/imgix-srcset.es.js",
+      "require": "./dist/imgix-srcset.umd.js"
+    }
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/madeleineostoja/imgix-srcset"
+  },
+  "bugs": {
+    "url": "https://github.com/madeleineostoja/imgix-srcset/issues"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "@rollup/plugin-typescript": "^8.2.1",
+    "prettier": "^2.3.0",
+    "rollup": "^2.48.0",
+    "tslib": "^2.2.0",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "query-string": "^7.1.1"
+  }
+}
