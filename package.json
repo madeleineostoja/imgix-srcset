@@ -5,11 +5,12 @@
   "license": "MIT",
   "author": "Madeleine Ostoja",
   "files": [
-    "dist"
+    "dist",
+    "index.d.ts"
   ],
   "main": "./dist/imgix-srcset.umd.js",
   "module": "./dist/imgix-srcset.es.js",
-  "types": "./dist/index.d.ts",
+  "types": "./index.d.ts",
   "scripts": {
     "develop": "rollup -cw",
     "build": "rollup -c",

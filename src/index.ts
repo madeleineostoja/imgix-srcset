@@ -2,7 +2,7 @@ import { stringify } from 'query-string';
 
 type ImgixProps = { [key: string]: string };
 
-export function trimSrc(src: string) {
+function trimSrc(src: string) {
   return src.split(/[?#]/)[0];
 }
 
