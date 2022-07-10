@@ -6,7 +6,7 @@ function trimSrc(src: string) {
   return src.split(/[?#]/)[0];
 }
 
-export function srcset(src: string, imgixProps: ImgixProps = {}) {
+export default function srcset(src: string, imgixProps: ImgixProps = {}) {
   const resolutions: number[] = [],
     sets = [];
 

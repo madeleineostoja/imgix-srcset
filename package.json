@@ -1,15 +1,15 @@
 {
   "name": "imgix-srcset",
   "description": "A dead simple utility to generate responsive srcsets from an Imgix compatible source URL",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "license": "MIT",
   "author": "Madeleine Ostoja",
   "files": [
     "dist",
     "index.d.ts"
   ],
-  "main": "./dist/imgix-srcset.mjs",
-  "module": "./dist/imgix-srcset.js",
+  "main": "./dist/imgix-srcset.js",
+  "module": "./dist/imgix-srcset.mjs",
   "types": "./index.d.ts",
   "scripts": {
     "develop": "rollup -cw",
