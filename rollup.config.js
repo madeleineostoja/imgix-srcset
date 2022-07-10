@@ -8,7 +8,7 @@ export default {
   input: 'src/index.ts',
   output: [
     { file: pkg.module, format: 'es' },
-    { file: pkg.main, format: 'umd', name: 'imgix-srcset' }
+    { file: pkg.main, format: 'cjs', name: 'imgix-srcset' }
   ],
   plugins: [typescript(), resolve(), commonJS()]
 };

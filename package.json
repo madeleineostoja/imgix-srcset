@@ -8,8 +8,8 @@
     "dist",
     "index.d.ts"
   ],
-  "main": "./dist/imgix-srcset.umd.js",
-  "module": "./dist/imgix-srcset.es.js",
+  "main": "./dist/imgix-srcset.mjs",
+  "module": "./dist/imgix-srcset.js",
   "types": "./index.d.ts",
   "scripts": {
     "develop": "rollup -cw",
@@ -18,8 +18,8 @@
   },
   "exports": {
     ".": {
-      "import": "./dist/imgix-srcset.es.js",
-      "require": "./dist/imgix-srcset.umd.js"
+      "import": "./dist/imgix-srcset.mjs",
+      "require": "./dist/imgix-srcset.js"
     }
   },
   "keywords": [],
