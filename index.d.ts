@@ -1,4 +1,4 @@
 declare type ImgixProps = {
   [key: string]: string;
 };
-export declare function srcset(src: string, imgixProps?: ImgixProps): string;
+export default function srcset(src: string, imgixProps?: ImgixProps): string;
