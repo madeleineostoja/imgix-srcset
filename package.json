@@ -1,7 +1,7 @@
 {
   "name": "imgix-srcset",
   "description": "A dead simple utility to generate responsive srcsets from an Imgix compatible source URL",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "MIT",
   "author": "Madeleine Ostoja",
   "files": [
