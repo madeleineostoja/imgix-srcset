@@ -38,8 +38,5 @@
     "rollup": "^2.48.0",
     "tslib": "^2.2.0",
     "typescript": "^4.2.3"
-  },
-  "dependencies": {
-    "query-string": "^7.1.1"
   }
 }

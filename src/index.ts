@@ -1,5 +1,3 @@
-import { stringify } from 'query-string';
-
 type ImgixProps = { [key: string]: string };
 
 function trimSrc(src: string) {
@@ -19,11 +17,15 @@ export default function srcset(src: string, imgixProps: ImgixProps = {}) {
 
   for (var i = 0; i < resolutions.length; i++) {
     const params = {
-      w: resolutions[i],
+      w: resolutions[i].toString(),
       ...imgixProps
     };
 
-    sets.push(`${trimSrc(src)}?${stringify(params)} ${resolutions[i]}w`);
+    sets.push(
+      `${trimSrc(src)}?${new URLSearchParams(params).toString()} ${
+        resolutions[i]
+      }w`
+    );
   }
 
   return sets.join(', ');
